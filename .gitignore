@@ -1,0 +1,16 @@
+__pycache__/
+build/
+dist/
+externaldocs/
+*.egg-info
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.tdo
+*.toc
+*.synctex.gz
+*.Lnk
+*.exe
+*.bat
