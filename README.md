@@ -1,8 +1,8 @@
 # RobotFramework AIO documentation
 
-The RobotFramework AIO documentation is available as PDF file and can be
+The Device Automation Service documentation is available as PDF file and can be
 found here:
-[RobotFrameworkAIO_Reference.pdf](https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf)
+[DeviceAutomationService_Reference.pdf](https://github.com/test-fullautomation/DevAtServ-documentation/blob/develop/DevAtServ/DeviceAutomationService.pdf)
 
 The documentation consists of two parts:
 
@@ -15,7 +15,7 @@ difference is that `genmaindoc.py` only builds the documentation,
 whereas `setup.py` additionally installs the documentation in
 
 > ``` 
-> python39\Lib\site-packages\RobotFrameworkAIO
+> python39\Lib\site-packages\DevAtServ
 > ```
 
 The execution of `setup.py` includes the execution of `genmaindoc.py`.
@@ -26,11 +26,11 @@ be executed:
 1.  Install a LaTeX compiler (full installation of Texlive recommended)
 
 2.  Clone the
-    [robotframework-documentation](https://github.com/test-fullautomation/robotframework-documentation)
+    [DevAtServ-documentation](https://github.com/test-fullautomation/DevAtServ-documentation)
     repository to your computer.
 
     ``` 
-    git clone https://github.com/test-fullautomation/robotframework-documentation.git
+    git clone https://github.com/test-fullautomation/DevAtServ-documentation.git
     ```
 
 3.  Clone all repositories containing components that shall be part of
@@ -41,8 +41,8 @@ be executed:
     `"IMPORTS"`:
 
     ``` 
-    "IMPORTS" : ["../../../python-genpackagedoc",
-                 "../../../python-extensions-collection",
+    "IMPORTS" : ["../../../python-microservice-base",
+                 "../../../python-microservice-cleware-switch",
                  ...
     ```
 
@@ -69,9 +69,9 @@ be executed:
 
     ``` 
     set MAINDOC_CONFIGFILE=--configfile "./maindoc/maindoc_configs/maindoc_config_OSS.json"
-    set BUNDLE_NAME=--bundle_name "RobotFramework AIO"
-    set BUNDLE_VERSION=--bundle_version "0.7.0"
-    set BUNDLE_VERSION_DATE=--bundle_version_date "03.2023"
+    set BUNDLE_NAME=--bundle_name "Device Automation Service"
+    set BUNDLE_VERSION=--bundle_version "0.1.0"
+    set BUNDLE_VERSION_DATE=--bundle_version_date "03.2025"
     ```
 
     The values are taken over to the resulting PDF file (e.g. in the
@@ -100,7 +100,7 @@ be executed:
     The output can be found here:
 
     ``` 
-    RobotFrameworkAIO\RobotFrameworkAIO_Reference.pdf
+    DevAtServ\DeviceAutomationService_Reference.pdf
     ```
 
     The name of the PDF file is defined in the `genmaindoc`
@@ -119,6 +119,8 @@ please don\'t hesitate to raise a ticket.
 [Thomas Pollerspöck](mailto:Thomas.Pollerspoeck@de.bosch.com)
 
 ## Contributors
+[Holger Queckenstedt](mailto:Holger.Queckenstedt@de.bosch.com)
+[Hua Van Thong](mailto:thong.huavan@vn.bosch.com)
 
 ## License
 

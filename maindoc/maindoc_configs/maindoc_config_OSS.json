@@ -58,7 +58,7 @@
 # Defines the name of the main tex file, that has to be executed by the LaTeX compiler.
 # It is expected that this file is present within "BOOKSOURCES".
 
-   "MAINTEXFILENAME" : "RobotFrameworkAIO_Reference_OSS.tex",
+   "MAINTEXFILENAME" : "DevAtServ_Reference_OSS.tex",
 
 
 # Section "JOBNAME":
@@ -68,7 +68,7 @@
 # Example: The name of the PDF file is: <JOBNAME>.pdf.
 # All pdflatex output files are generated within "BOOKSOURCES".
 
-   "JOBNAME" : "RobotFrameworkAIO_Reference",
+   "JOBNAME" : "DeviceAutomationService_Reference",
 
 
 # Section "COVERSHEETSUFFIX":
@@ -79,7 +79,7 @@
 
 
 # Section "PROXY":
-# ----------------
+# --------------F
 # Installation hints provided within the documentation, may require a proxy address. In case of a concrete proxy address is not known,
 # (because a proxy is company specific) a replacement string has to be defined here:
 
