@@ -119,7 +119,7 @@ please don\'t hesitate to raise a ticket.
 [Thomas Pollerspöck](mailto:Thomas.Pollerspoeck@de.bosch.com)
 
 ## Contributors
-[Holger Queckenstedt](mailto:Holger.Queckenstedt@de.bosch.com)
+[Holger Queckenstedt](mailto:Holger.Queckenstedt@de.bosch.com)  
 [Hua Van Thong](mailto:thong.huavan@vn.bosch.com)
 
 ## License
