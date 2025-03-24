@@ -34,8 +34,6 @@ This includes the repository configuration and command line values.
 import os, sys, time, platform, json, argparse
 import colorama as col
 
-from robot.version import get_full_version
-
 from PythonExtensionsCollection.String.CString import CString
 from PythonExtensionsCollection.File.CFile import CFile
 from PythonExtensionsCollection.Utils.CUtils import *
@@ -220,9 +218,6 @@ Responsible for:
       if sKey in self.__dictMainDocConfig['TEX']:
          sLaTeXInterpreter = CString.NormalizePath(sPath=self.__dictMainDocConfig['TEX'][sKey], sReferencePathAbs=sReferencePathAbs)
       self.__dictMainDocConfig['LATEXINTERPRETER'] = sLaTeXInterpreter
-
-      # add version of underlying Robot Framework (core)
-      self.__dictMainDocConfig['ROBFWVERSION'] = get_full_version('Robot Framework')
 
       # debug only
       # PrettyPrint(self.__dictMainDocConfig, sPrefix="Config")

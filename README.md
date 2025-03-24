@@ -1,4 +1,4 @@
-# RobotFramework AIO documentation
+# DevAtServ documentation
 
 The Device Automation Service documentation is available as PDF file and can be
 found here:
@@ -7,9 +7,9 @@ found here:
 The documentation consists of two parts:
 
 1.  Common description
-2.  Description of the interfaces of RobotFramework AIO components
+2.  Description of the interfaces of DevAtServ components
 
-The RobotFramework AIO documentation can be build either with
+The DevAtServ documentation can be build either with
 `genmaindoc.py` immediately or with `setup.py` indirectly. The
 difference is that `genmaindoc.py` only builds the documentation,
 whereas `setup.py` additionally installs the documentation in
@@ -119,7 +119,7 @@ please don\'t hesitate to raise a ticket.
 [Thomas Pollerspöck](mailto:Thomas.Pollerspoeck@de.bosch.com)
 
 ## Contributors
-[Holger Queckenstedt](mailto:Holger.Queckenstedt@de.bosch.com)
+[Holger Queckenstedt](mailto:Holger.Queckenstedt@de.bosch.com)  
 [Hua Van Thong](mailto:thong.huavan@vn.bosch.com)
 
 ## License
