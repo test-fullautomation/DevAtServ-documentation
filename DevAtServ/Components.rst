@@ -2,11 +2,7 @@
 
 * ``Device Automation Service``
 
-  Version: 0.13.1.0 (from 11/2024)
-
-* Underlying ``Robot Framework`` (core)
-
-  Robot Framework 6.1 (Python 3.9.16 on win32)
+  Version: 0.0.1.0 (from 03/2025)
 
 **Device Automation Service components listing**
 
