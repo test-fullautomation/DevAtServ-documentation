@@ -1,14 +1,10 @@
-**Device Automation Service bundle**
+**RobotFramework AIO bundle**
 
-* ``Device Automation Service``
+* ``RobotFramework AIO``
 
   Version: 0.13.1.0 (from 11/2024)
 
-* Underlying ``Robot Framework`` (core)
-
-  Robot Framework 6.1 (Python 3.9.16 on win32)
-
-**Device Automation Service components listing**
+**RobotFramework AIO components listing**
 
 * ``MicroserviceBase``
 

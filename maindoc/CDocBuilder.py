@@ -215,8 +215,6 @@ Constructor of class ``CDocBuilder``.
 
       # -- print information about underlying Robot Framework (core)
 
-      ROBFWVERSION = self.__dictMainDocConfig['ROBFWVERSION']
-
       oOverviewFile_tex.Write(r"\vspace{2ex}")
 
       oOverviewFile_tex.Write(r"{\Large\textbf{Underlying Robot Framework (core)}}")
@@ -224,7 +222,6 @@ Constructor of class ``CDocBuilder``.
       oOverviewFile_tex.Write(r"\vspace{2ex}")
       oOverviewFile_tex.Write()
       oOverviewFile_tex.Write(r"\begin{tabular}{| m{44em} |}\hline")
-      oOverviewFile_tex.Write(f"{ROBFWVERSION}" + r"\\ \hline")
       oOverviewFile_tex.Write(r"\end{tabular}")
       oOverviewFile_tex.Write()
       oOverviewFile_tex.Write(r"\vspace{2ex}")
@@ -282,14 +279,6 @@ Constructor of class ``CDocBuilder``.
       oOverviewFile_rst.Write(f"  Version: {BUNDLE_VERSION} (from {BUNDLE_VERSION_DATE})")
       oOverviewFile_rst.Write()
 
-      # -- print information about underlying Robot Framework (core)
-
-      ROBFWVERSION = self.__dictMainDocConfig['ROBFWVERSION']
-      oOverviewFile_rst.Write(f"* Underlying ``Robot Framework`` (core)")
-      oOverviewFile_rst.Write()
-      oOverviewFile_rst.Write(f"  {ROBFWVERSION}")
-      oOverviewFile_rst.Write()
-
       # -- print information about included packages
 
       oOverviewFile_rst.Write(f"**{BUNDLE_NAME} components listing**")
@@ -316,8 +305,6 @@ Constructor of class ``CDocBuilder``.
       BUNDLE_NAME         = self.__dictMainDocConfig['BUNDLE_NAME']
       BUNDLE_VERSION      = self.__dictMainDocConfig['BUNDLE_VERSION']
       BUNDLE_VERSION_DATE = self.__dictMainDocConfig['BUNDLE_VERSION_DATE']
-
-      ROBFWVERSION = self.__dictMainDocConfig['ROBFWVERSION']
 
       sExternalDocFolder = self.__dictMainDocConfig['EXTERNALDOCFOLDER']
       sOverviewFileName_html = "Components.html"
@@ -370,7 +357,6 @@ Constructor of class ``CDocBuilder``.
       oOverviewFile_html.Write()
 
       oOverviewFile_html.Write(f"<tr bgcolor=\"{COL1}\"><td><font face=\"Arial\" color=\"#000000\" size=\"2\"><b>{BUNDLE_NAME} bundle</b></font></td><td><font face=\"Arial\" color=\"#000000\" size=\"2\"><b>Version: {BUNDLE_VERSION} (from {BUNDLE_VERSION_DATE})</b></font></td></tr>")
-      oOverviewFile_html.Write(f"<tr bgcolor=\"{COL2}\"><td><font face=\"Arial\" color=\"#000000\" size=\"2\"><b>Robot Framework core</b></font></td><td><font face=\"Arial\" color=\"#000000\" size=\"2\">{ROBFWVERSION}</font></td></tr>")
 
       COL = COL3
       for dictConfig in listofdictConfig:
