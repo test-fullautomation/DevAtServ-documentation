@@ -1,10 +1,10 @@
-**RobotFramework AIO bundle**
+**Device Automation Service bundle**
 
-* ``RobotFramework AIO``
+* ``Device Automation Service``
 
-  Version: 0.13.1.0 (from 11/2024)
+  Version: 0.0.1.0 (from 03/2025)
 
-**RobotFramework AIO components listing**
+**Device Automation Service components listing**
 
 * ``MicroserviceBase``
 
