@@ -1,6 +1,6 @@
 # **************************************************************************************************************
 #
-#  Copyright 2020-2024 Robert Bosch GmbH
+#  Copyright 2020-2026 Robert Bosch GmbH
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 #
 # XC-HWP/ESW3-Queckenstedt
 #
-# 22.11.2023
+# 11.03.2026
 #
 # --------------------------------------------------------------------------------------------------------------
 
@@ -313,7 +313,7 @@ Constructor of class ``CDocBuilder``.
       oOverviewFile_html = CFile(sOverviewFile_html)
 
       sHeader = """<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
    <meta name="####BUNDLE_NAME####" content="Component Overview">
    <title>####BUNDLE_NAME#### Component Overview</title>
 </head>
@@ -604,7 +604,7 @@ Constructor of class ``CDocBuilder``.
          oLibraryDocImportTexFile = CFile(sLibraryDocImportTexFile)
          oLibraryDocImportTexFile.Write(f"% Generated at {self.__dictMainDocConfig['NOW']}")
          oLibraryDocImportTexFile.Write()
-         oLibraryDocImportTexFile.Write("\chapter{Imports not available}")
+         oLibraryDocImportTexFile.Write(r"\chapter{Imports not available}")
          oLibraryDocImportTexFile.Write()
          sOutputMessage = r"{\Large\textcolor{red}{\textbf{\textit{Import of external documentations is deactivated}}}}"
          oLibraryDocImportTexFile.Write(sOutputMessage)
@@ -694,6 +694,12 @@ The proxy address is an option and depends on the conditions under which your co
          COVERSHEETSUFFIX = COVERSHEETSUFFIX.strip()
          if COVERSHEETSUFFIX == "":
             COVERSHEETSUFFIX = None
+      if COVERSHEETSUFFIX is not None:
+         listCoverSheetSuffixes_splitted = COVERSHEETSUFFIX.split(';')
+         listCoverSheetSuffixes_final = []
+         for sCoverSheetSuffix in listCoverSheetSuffixes_splitted:
+            listCoverSheetSuffixes_final.append(sCoverSheetSuffix.strip() + "\\\\")
+         COVERSHEETSUFFIX = r"\vspace{2ex}".join(listCoverSheetSuffixes_final)
 
       # -- get and prepare framework bundle information (values prepared for LaTeX output)
 
@@ -745,7 +751,7 @@ The proxy address is an option and depends on the conditions under which your co
       oFinalSummaryFile.Write(r"\begin{tabular}{m{16em}}\hline")
       oFinalSummaryFile.Write(r"   \multicolumn{1}{c}{\textbf{" + f"{sPDFFileName_masked}" + r"}}\\")
       oFinalSummaryFile.Write(r"   \multicolumn{1}{c}{\textit{Created at " + self.__dictMainDocConfig['NOW'] + r"}}\\")
-      oFinalSummaryFile.Write(r"   \multicolumn{1}{c}{\textit{by genmaindoc v. " + self.__dictMainDocConfig['VERSION'] + r"}}\\ \hline")
+      oFinalSummaryFile.Write(r"   \multicolumn{1}{c}{\textit{by genmaindoc v. " + self.__dictMainDocConfig['PACKAGEVERSION'] + r"}}\\ \hline")
       oFinalSummaryFile.Write(r"\end{tabular}")
       oFinalSummaryFile.Write(r"\end{center}")
       oFinalSummaryFile.Write()

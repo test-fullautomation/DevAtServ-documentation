@@ -1,10 +1,10 @@
-**Device Automation Service bundle**
+**DevAtServ bundle**
 
-* ``Device Automation Service``
+* ``DevAtServ``
 
-  Version: 0.0.1.0 (from 03/2025)
+  Version: 0.14.4.16 (from 03/2026)
 
-**Device Automation Service components listing**
+**DevAtServ components listing**
 
 * ``MicroserviceBase``
 
