@@ -79,7 +79,7 @@
 
 
 # Section "PROXY":
-# --------------F
+# ----------------
 # Installation hints provided within the documentation, may require a proxy address. In case of a concrete proxy address is not known,
 # (because a proxy is company specific) a replacement string has to be defined here:
 
